@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+  bot:
+    build: ..
+    command: sh -c "python3 -m app.py"
+    env_file:
+      - .env
+    restart: always
